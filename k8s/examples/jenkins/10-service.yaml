@@ -6,7 +6,8 @@ metadata:
     app: jenkins
 spec:
   selector:
-    app: master
+    app: jenkins
+    jenkins: master
   type: NodePort
   ports:
   - name: ui
@@ -21,7 +22,7 @@ metadata:
     app: jenkins
 spec:
   selector:
-    app: master
+    app: jenkins
   ports:
   - name: slaves
     port: 5000
